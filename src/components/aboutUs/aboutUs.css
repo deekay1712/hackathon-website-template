@@ -1,0 +1,45 @@
+.aboutUsWrapper{
+    padding: 50px 80px 50px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsContent{
+    width: 50%;
+    height: min-content;
+    border-radius: 20px;
+}
+
+.aboutUsContent h1{
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.aboutUsContent h1 span{
+    background-image: linear-gradient(rgb(243, 101, 52) 25%, rgb(246, 159, 39) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutUsContent p{
+    color: #979da2;
+    line-height: 24px;
+}
+
+.aboutUsImageCards{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUsImageCard{
+    height: 250px;
+    width: 600px;
+}
+
+.aboutUsImageCard img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #FF4ECD;
+    object-fit: cover;
+}

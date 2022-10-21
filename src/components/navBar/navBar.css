@@ -1,0 +1,106 @@
+.navBar{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;   
+
+    background: rgba(2, 1, 1, 0.1);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+/* 
+    backdrop-filter: saturate(180%) blur(10px);
+    box-shadow: rgb(2 1 1 / 10%) 0px 5px 20px -5px; */
+}
+
+.navBarLogo{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+.navBarLogoImg{
+    width: auto;
+    height: 100%;
+}
+
+.navBarLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBarLinks li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navBarLinks li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.navBarLinks li a:hover{
+    color: rgb(183, 180, 180);
+    cursor: pointer;
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 796px){
+    .navBar{
+        padding: 10px 20px;
+    }
+    .navBarLinks{
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+        position: fixed;
+        top: 100px;
+        right: -300px;
+        width: 300px;
+        height: calc(100vh - 100px);
+        z-index: 100;
+        background-color: #000000;
+        transition: 0.3s ease-in-out;
+        padding: 0;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .active{
+        right: 0px;
+    }
+    /* .navBarLinksMobile ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navBarLinksMobile ul li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+    }
+    .navBarLinksMobile ul li a{
+        text-decoration: none;
+        color: #ffffff;
+        transition: 0.3s ease-in-out;
+    }
+    .navBarLinksMobile ul li a:hover{
+        color: gray;
+        cursor: pointer;
+    } */
+}

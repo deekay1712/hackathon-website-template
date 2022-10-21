@@ -1,0 +1,74 @@
+.homeWrapper{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 100px 80px 0px 80px;
+    height: calc(100vh - 100px);
+  /* background: url(../../../public/assets/main.svg); */
+
+
+}
+
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.homeTitle{
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.homeTitle span{
+    background-image: linear-gradient(rgb(255, 28, 247) 25%, rgb(178, 73, 248) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.homeDescription{
+    font-size: 20px;
+    color: #787f85;
+}
+
+.homeButtons{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: min-content;
+}
+
+.homeButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 5px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.homeButtonLogo{
+    height: 24px;
+    width: 24px;
+}
+
+.homeButtonDesc{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn1{
+    background: #3770ff;
+}
+
+.btn2{
+    /* mirror effect */
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+}
